@@ -1,7 +1,7 @@
 package com.teicm.kerkinibackend.api.v1.mapper;
 
 import com.teicm.kerkinibackend.api.v1.model.DeigmaOrnithopanidaXPresAndThreatsDTO;
-import com.teicm.kerkinibackend.domain.DeigmaOrnithopanidaXPresAndThreats;
+import com.teicm.kerkinibackend.domain.Ornithopanida.DeigmaOrnithopanidaXPresAndThreats;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

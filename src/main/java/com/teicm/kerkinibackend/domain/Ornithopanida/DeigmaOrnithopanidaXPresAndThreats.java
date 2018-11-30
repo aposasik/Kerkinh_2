@@ -1,4 +1,6 @@
-package com.teicm.kerkinibackend.domain;
+package com.teicm.kerkinibackend.domain.Ornithopanida;
+
+
 
 
 import javax.persistence.*;

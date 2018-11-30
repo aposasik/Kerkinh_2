@@ -1,5 +1,7 @@
 package com.teicm.kerkinibackend.domain.Ornithopanida;
 
+import com.teicm.kerkinibackend.domain.Ornithopanida.DeigmaOrnithopanidaXPresAndThreats;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalTime;

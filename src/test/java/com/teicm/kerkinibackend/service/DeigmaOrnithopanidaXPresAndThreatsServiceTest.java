@@ -2,8 +2,8 @@ package com.teicm.kerkinibackend.service;
 
 import com.teicm.kerkinibackend.api.v1.mapper.DeigmaOrnithopanidaXPresAndThreatsMapper;
 import com.teicm.kerkinibackend.api.v1.model.DeigmaOrnithopanidaXPresAndThreatsDTO;
-import com.teicm.kerkinibackend.domain.DeigmaOrnithopanidaXPresAndThreats;
-import com.teicm.kerkinibackend.repositories.DeigmaOrnithopanidaXPresAndThreatsRep;
+import com.teicm.kerkinibackend.domain.Ornithopanida.DeigmaOrnithopanidaXPresAndThreats;
+import com.teicm.kerkinibackend.Repository.DeigmaOrnithopanidaXPresAndThreatsRep;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
