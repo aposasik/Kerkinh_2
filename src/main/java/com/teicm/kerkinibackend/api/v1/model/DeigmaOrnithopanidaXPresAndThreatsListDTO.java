@@ -11,6 +11,4 @@ public class DeigmaOrnithopanidaXPresAndThreatsListDTO
 {
     List<DeigmaOrnithopanidaXPresAndThreatsDTO> deigmaeidhPnTList;
 
-
-
 }
