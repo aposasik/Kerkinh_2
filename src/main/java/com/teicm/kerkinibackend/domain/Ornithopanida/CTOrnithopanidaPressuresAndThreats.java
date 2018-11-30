@@ -17,7 +17,7 @@ public class CTOrnithopanidaPressuresAndThreats
     @Column(name = "Remarks", length = 255)
     private String Remarks;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "CTOrnithopanidaPressuresAndThreats")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "ctornithopanidaPressuresAndThreats")
     private Set<DeigmaOrnithopanidaXPresAndThreats> deigmaOrnithopanidaXPresAndThreatsSet;
 
     public CTOrnithopanidaPressuresAndThreats() { }

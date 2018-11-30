@@ -1,7 +1,5 @@
 package com.teicm.kerkinibackend.domain.Ornithopanida;
 
-import com.teicm.kerkinibackend.domain.Ornithopanida.DeigmaOrnithopanidaXPresAndThreats;
-
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -19,10 +17,10 @@ public class DeigmaOrnithopanida {
     private Long id;
 
     //TODO to name prosoxi
-    @OneToMany(cascade = CascadeType.ALL,mappedBy = "deigma_ornithopanida")
+    @OneToMany(cascade = CascadeType.ALL,mappedBy = "deigmaOrnithopanida")
     private Set<DeigmaOrnithopanidaXPresAndThreats> deigmaOrnithopanidaXPresAndThreatsSet = new HashSet<>();
     //TODO to name prosoxi
-    @OneToMany(cascade = CascadeType.ALL,mappedBy = "deigma_ornithopanida")
+    @OneToMany(cascade = CascadeType.ALL,mappedBy = "deigmaOrnithopanida")
     private Set<DeigmaOrnithopanidaXSpecies> deigmaOrnithopanidaXSpeciesSet = new HashSet<>();
 
     @Column(name = "researcher")
