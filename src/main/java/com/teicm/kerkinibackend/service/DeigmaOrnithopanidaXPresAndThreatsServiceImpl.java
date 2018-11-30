@@ -2,7 +2,7 @@ package com.teicm.kerkinibackend.service;
 
 import com.teicm.kerkinibackend.api.v1.mapper.DeigmaOrnithopanidaXPresAndThreatsMapper;
 import com.teicm.kerkinibackend.api.v1.model.DeigmaOrnithopanidaXPresAndThreatsDTO;
-import com.teicm.kerkinibackend.repositories.DeigmaOrnithopanidaXPresAndThreatsRep;
+import com.teicm.kerkinibackend.Repository.DeigmaOrnithopanidaXPresAndThreatsRep;
 
 import java.util.List;
 import java.util.stream.Collectors;
