@@ -3,10 +3,13 @@ package com.teicm.kerkinibackend.domain.Ornithopanida;
 
 
 
+import lombok.Data;
+
 import javax.persistence.*;
 import java.util.Set;
 
 @Entity
+@Data
 public class DeigmaOrnithopanidaXPresAndThreats
 {
     @Id
