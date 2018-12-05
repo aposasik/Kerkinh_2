@@ -8,6 +8,10 @@ import java.util.Set;
 public class CTOrnithopanidaEidi
 {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false)
+    private Long id;
+
     @Column(name = "kodikoseidos", length = 50)
     private String kodikoseidos;
 
@@ -22,6 +26,12 @@ public class CTOrnithopanidaEidi
         this.deigmaOrnithopanidaXSpeciesSet = deigmaOrnithopanidaXSpeciesSet;
     }
 
+    public Long getId() {
+        return id;
+    }
+    public void setId(Long id) {
+        this.id = id;
+    }
     public String getKodikoseidos() {
         return kodikoseidos;
     }

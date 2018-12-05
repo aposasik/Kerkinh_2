@@ -13,6 +13,10 @@ public class DeigmaOrnithopanidaXPresAndThreats
 {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false)
+    private Long id;
+
+
     @Column(name = "kodikos")
     private Long kodikos;
 
@@ -48,6 +52,12 @@ public class DeigmaOrnithopanidaXPresAndThreats
         this.Importance=Importance;
     }
 
+    public Long getId() {
+        return id;
+    }
+    public void setId(Long id) {
+        this.id = id;
+    }
     public Long getKodikos() {
         return kodikos;
     }

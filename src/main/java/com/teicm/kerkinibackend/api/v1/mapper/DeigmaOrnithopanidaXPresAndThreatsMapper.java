@@ -6,10 +6,11 @@ import com.teicm.kerkinibackend.domain.Ornithopanida.DeigmaOrnithopanidaXPresAnd
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
-@Mapper
+//@Mapper
+
 public interface DeigmaOrnithopanidaXPresAndThreatsMapper
 {
-    DeigmaOrnithopanidaXPresAndThreatsMapper INSTANCE = Mappers.getMapper(DeigmaOrnithopanidaXPresAndThreatsMapper.class);
+   // DeigmaOrnithopanidaXPresAndThreatsMapper INSTANCE = Mappers.getMapper(DeigmaOrnithopanidaXPresAndThreatsMapper.class);
 
-    DeigmaOrnithopanidaXPresAndThreatsDTO deigmaOrnithopanidaXPresAndThreatsTOdeigmaOrnithopanidaXPresAndThreatsDTO(DeigmaOrnithopanidaXPresAndThreats deigmaOrnithopanidaXPresAndThreats);
+    DeigmaOrnithopanidaXPresAndThreats deigmaOrnithopanidaXPresAndThreatsTOdeigmaOrnithopanidaXPresAndThreatsDTO(DeigmaOrnithopanidaXPresAndThreatsDTO deigmaOrnithopanidaXPresAndThreatsDTO);
 }

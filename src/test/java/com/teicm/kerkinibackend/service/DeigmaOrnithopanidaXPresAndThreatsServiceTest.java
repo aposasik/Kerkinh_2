@@ -1,4 +1,4 @@
-package com.teicm.kerkinibackend.service;
+/*package com.teicm.kerkinibackend.service;
 
 import com.teicm.kerkinibackend.api.v1.mapper.DeigmaOrnithopanidaXPresAndThreatsMapper;
 import com.teicm.kerkinibackend.api.v1.model.DeigmaOrnithopanidaXPresAndThreatsDTO;
@@ -51,4 +51,4 @@ public class DeigmaOrnithopanidaXPresAndThreatsServiceTest
         assertEquals(5,deigmaOrnithopanidaXPresAndThreatsDTOS.size());
     }
 
-}
+}*/

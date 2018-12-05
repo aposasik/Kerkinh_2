@@ -3,6 +3,7 @@ package com.teicm.kerkinibackend.service;
 import com.teicm.kerkinibackend.api.v1.mapper.DeigmaOrnithopanidaXPresAndThreatsMapper;
 import com.teicm.kerkinibackend.api.v1.model.DeigmaOrnithopanidaXPresAndThreatsDTO;
 import com.teicm.kerkinibackend.Repository.DeigmaOrnithopanidaXPresAndThreatsRep;
+import com.teicm.kerkinibackend.domain.Ornithopanida.DeigmaOrnithopanidaXPresAndThreats;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -13,9 +14,10 @@ import java.util.stream.Collectors;
 public class DeigmaOrnithopanidaXPresAndThreatsServiceImpl implements DeigmaOrnithopanidaXPresAndThreatsService
 {
 
-    private final DeigmaOrnithopanidaXPresAndThreatsMapper deigmaOrnithopanidaXPresAndThreatsMapper;
+    private DeigmaOrnithopanidaXPresAndThreatsMapper deigmaOrnithopanidaXPresAndThreatsMapper;
 
-    private final DeigmaOrnithopanidaXPresAndThreatsRep deigmaOrnithopanidaXPresAndThreatsRep;
+    @Autowired
+    private DeigmaOrnithopanidaXPresAndThreatsRep deigmaOrnithopanidaXPresAndThreatsRep;
 
     public DeigmaOrnithopanidaXPresAndThreatsServiceImpl(DeigmaOrnithopanidaXPresAndThreatsMapper deigmaOrnithopanidaXPresAndThreatsMapper, DeigmaOrnithopanidaXPresAndThreatsRep deigmaOrnithopanidaXPresAndThreatsRep) {
         this.deigmaOrnithopanidaXPresAndThreatsMapper = deigmaOrnithopanidaXPresAndThreatsMapper;
@@ -23,11 +25,10 @@ public class DeigmaOrnithopanidaXPresAndThreatsServiceImpl implements DeigmaOrni
     }
 
     @Override
-    public List<DeigmaOrnithopanidaXPresAndThreatsDTO> getAllDeigmata()
+    public List<DeigmaOrnithopanidaXPresAndThreats> findAll()
     {
-        return deigmaOrnithopanidaXPresAndThreatsRep.findAll()
-                .stream()
-                .map(deigmaOrnithopanidaXPresAndThreatsMapper::deigmaOrnithopanidaXPresAndThreatsTOdeigmaOrnithopanidaXPresAndThreatsDTO)
-                .collect(Collectors.toList());
+        return deigmaOrnithopanidaXPresAndThreatsRep.findAll();
+
     }
+
 }

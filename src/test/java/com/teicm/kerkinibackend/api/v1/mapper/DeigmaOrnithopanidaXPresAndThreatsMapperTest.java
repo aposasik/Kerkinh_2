@@ -1,4 +1,4 @@
-package com.teicm.kerkinibackend.api.v1.mapper;
+/*package com.teicm.kerkinibackend.api.v1.mapper;
 
 import com.teicm.kerkinibackend.api.v1.model.DeigmaOrnithopanidaXPresAndThreatsDTO;
 import com.teicm.kerkinibackend.domain.Ornithopanida.DeigmaOrnithopanidaXPresAndThreats;
@@ -39,4 +39,4 @@ public class DeigmaOrnithopanidaXPresAndThreatsMapperTest
 
     }
 
-}
+}*/

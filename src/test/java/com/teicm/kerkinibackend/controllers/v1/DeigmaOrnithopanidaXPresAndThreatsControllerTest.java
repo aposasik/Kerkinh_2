@@ -1,4 +1,4 @@
-package com.teicm.kerkinibackend.controllers.v1;
+/*package com.teicm.kerkinibackend.controllers.v1;
 
 import com.teicm.kerkinibackend.api.v1.model.DeigmaOrnithopanidaXPresAndThreatsDTO;
 import com.teicm.kerkinibackend.service.DeigmaOrnithopanidaXPresAndThreatsService;
@@ -73,4 +73,4 @@ public class DeigmaOrnithopanidaXPresAndThreatsControllerTest
                 .andExpect(jsonPath("$.deigmaeidhPnTList", hasSize(2)));
     }
 
-}
+}*/
