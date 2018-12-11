@@ -2,6 +2,7 @@ package com.teicm.kerkinibackend.api.v1.model;
 
 public class DeigmaOrnithopanidaXPresAndThreatsDTO
 {
+    private Long deigmaornithopanidaID;
     private Long kodikos;
     private String Releve_NR;
     private String ACT_Code;
@@ -9,6 +10,12 @@ public class DeigmaOrnithopanidaXPresAndThreatsDTO
     private String Importance;
 
 
+    public Long getDeigmaornithopanidaID() {
+        return deigmaornithopanidaID;
+    }
+    public void setDeigmaornithopanidaID(Long deigmaornithopanidaID) {
+        this.deigmaornithopanidaID = deigmaornithopanidaID;
+    }
     public Long getKodikos() {
         return kodikos;
     }

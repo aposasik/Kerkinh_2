@@ -13,4 +13,7 @@ public interface DeigmaOrnithopanidaXPresAndThreatsMapper
    // DeigmaOrnithopanidaXPresAndThreatsMapper INSTANCE = Mappers.getMapper(DeigmaOrnithopanidaXPresAndThreatsMapper.class);
 
     DeigmaOrnithopanidaXPresAndThreats deigmaOrnithopanidaXPresAndThreatsTOdeigmaOrnithopanidaXPresAndThreatsDTO(DeigmaOrnithopanidaXPresAndThreatsDTO deigmaOrnithopanidaXPresAndThreatsDTO);
+
+    DeigmaOrnithopanidaXPresAndThreatsDTO deigmaOrnithopanidaXPresAndThreatsDTOTOdeigmaOrnithopanidaXPresAndThreats(DeigmaOrnithopanidaXPresAndThreats deigmaOrnithopanidaXPresAndThreats);
+
 }

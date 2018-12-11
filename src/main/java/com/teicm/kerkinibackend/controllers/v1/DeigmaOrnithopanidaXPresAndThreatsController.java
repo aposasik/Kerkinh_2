@@ -27,6 +27,6 @@ public class DeigmaOrnithopanidaXPresAndThreatsController
     @ResponseStatus(HttpStatus.OK)
     public List<DeigmaOrnithopanidaXPresAndThreats> findAll()
     {
-        return deigmaOrnithopanidaXPresAndThreatsService.findAll();
+         return deigmaOrnithopanidaXPresAndThreatsService.findAll();
     }
 }

@@ -14,6 +14,7 @@ public class DeigmaOrnithopanidaXPresAndThreatsMapperImpl implements DeigmaOrnit
             return null;
         }
         DeigmaOrnithopanidaXPresAndThreats deigmaOrnithopanidaXPresAndThreats = new DeigmaOrnithopanidaXPresAndThreats();
+
         deigmaOrnithopanidaXPresAndThreats.setReleve_NR(deigmaOrnithopanidaXPresAndThreatsDTO.getReleve_NR());
         deigmaOrnithopanidaXPresAndThreats.setACT_Code(deigmaOrnithopanidaXPresAndThreatsDTO.getACT_Code());
         deigmaOrnithopanidaXPresAndThreats.setType(deigmaOrnithopanidaXPresAndThreatsDTO.getType());
@@ -21,6 +22,24 @@ public class DeigmaOrnithopanidaXPresAndThreatsMapperImpl implements DeigmaOrnit
         deigmaOrnithopanidaXPresAndThreats.setKodikos(deigmaOrnithopanidaXPresAndThreatsDTO.getKodikos());
 
         return deigmaOrnithopanidaXPresAndThreats;
+    }
+
+    @Override
+    public DeigmaOrnithopanidaXPresAndThreatsDTO deigmaOrnithopanidaXPresAndThreatsDTOTOdeigmaOrnithopanidaXPresAndThreats(DeigmaOrnithopanidaXPresAndThreats deigmaOrnithopanidaXPresAndThreats) {
+        if ( deigmaOrnithopanidaXPresAndThreats == null ) {
+            return null;
+        }
+
+        DeigmaOrnithopanidaXPresAndThreatsDTO deigmaOrnithopanidaXPresAndThreatsDTO = new DeigmaOrnithopanidaXPresAndThreatsDTO();
+
+        deigmaOrnithopanidaXPresAndThreatsDTO.setDeigmaornithopanidaID(deigmaOrnithopanidaXPresAndThreats.getDeigmaOrnithopanida().getId());
+        deigmaOrnithopanidaXPresAndThreatsDTO.setKodikos( deigmaOrnithopanidaXPresAndThreats.getKodikos() );
+        deigmaOrnithopanidaXPresAndThreatsDTO.setReleve_NR( deigmaOrnithopanidaXPresAndThreats.getReleve_NR() );
+        deigmaOrnithopanidaXPresAndThreatsDTO.setACT_Code( deigmaOrnithopanidaXPresAndThreats.getCtornithopanidaPressuresAndThreats().getACT_Code());
+        deigmaOrnithopanidaXPresAndThreatsDTO.setType( deigmaOrnithopanidaXPresAndThreats.getType() );
+        deigmaOrnithopanidaXPresAndThreatsDTO.setImportance( deigmaOrnithopanidaXPresAndThreats.getImportance() );
+
+        return deigmaOrnithopanidaXPresAndThreatsDTO;
     }
 }
 
