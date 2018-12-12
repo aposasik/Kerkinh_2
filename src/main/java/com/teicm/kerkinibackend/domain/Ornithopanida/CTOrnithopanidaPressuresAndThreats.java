@@ -12,55 +12,64 @@ public class CTOrnithopanidaPressuresAndThreats
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @Column(name = "ACT_Code", length = 50)
-    private String ACT_Code;
+    @Column(name = "actCode", length = 50)
+    private String actcode;
 
-    @Column(name = "Descript_EN", length = 255)
-    private String DescriptEN;
+    @Column(name = "descriptEn")
+    private String descripten;
 
-    @Column(name = "Remarks", length = 255)
-    private String Remarks;
+    @Column(name = "remarks")
+    private String remarks;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "ctornithopanidaPressuresAndThreats")
     private Set<DeigmaOrnithopanidaXPresAndThreats> deigmaOrnithopanidaXPresAndThreatsSet;
 
     public CTOrnithopanidaPressuresAndThreats() { }
 
-    public CTOrnithopanidaPressuresAndThreats(String ACT_Code,String DescriptEN,String Remarks, Set<DeigmaOrnithopanidaXPresAndThreats> deigmaOrnithopanidaXPresAndThreatsSet)
+    public CTOrnithopanidaPressuresAndThreats(String actcode,String descripten,String remarks, Set<DeigmaOrnithopanidaXPresAndThreats> deigmaOrnithopanidaXPresAndThreatsSet)
     {
-        this.ACT_Code = ACT_Code;
-        this.DescriptEN = DescriptEN;
-        this.Remarks = Remarks;
+        this.actcode=actcode;
+        this.descripten=descripten;
+        this.remarks=remarks;
         this.deigmaOrnithopanidaXPresAndThreatsSet = deigmaOrnithopanidaXPresAndThreatsSet;
     }
 
     public Long getId() {
         return id;
     }
+
     public void setId(Long id) {
         this.id = id;
     }
-    public String getACT_Code() {
-        return ACT_Code;
+
+    public String getActcode() {
+        return actcode;
     }
-    public void setACT_Code(String ACT_Code) {
-        this.ACT_Code = ACT_Code;
+
+    public void setActcode(String actcode) {
+        this.actcode = actcode;
     }
-    public String getDescriptEN() {
-        return DescriptEN;
+
+    public String getDescripten() {
+        return descripten;
     }
-    public void setDescriptEN(String descriptEN) {
-        DescriptEN = descriptEN;
+
+    public void setDescripten(String descripten) {
+        this.descripten = descripten;
     }
+
     public String getRemarks() {
-        return Remarks;
+        return remarks;
     }
+
     public void setRemarks(String remarks) {
-        Remarks = remarks;
+        this.remarks = remarks;
     }
+
     public Set<DeigmaOrnithopanidaXPresAndThreats> getDeigmaOrnithopanidaXPresAndThreatsSet() {
         return deigmaOrnithopanidaXPresAndThreatsSet;
     }
+
     public void setDeigmaOrnithopanidaXPresAndThreatsSet(Set<DeigmaOrnithopanidaXPresAndThreats> deigmaOrnithopanidaXPresAndThreatsSet) {
         this.deigmaOrnithopanidaXPresAndThreatsSet = deigmaOrnithopanidaXPresAndThreatsSet;
     }

@@ -15,8 +15,8 @@ public class DeigmaOrnithopanidaXPresAndThreatsMapperImpl implements DeigmaOrnit
         }
         DeigmaOrnithopanidaXPresAndThreats deigmaOrnithopanidaXPresAndThreats = new DeigmaOrnithopanidaXPresAndThreats();
 
-        deigmaOrnithopanidaXPresAndThreats.setReleve_NR(deigmaOrnithopanidaXPresAndThreatsDTO.getReleve_NR());
-        deigmaOrnithopanidaXPresAndThreats.setACT_Code(deigmaOrnithopanidaXPresAndThreatsDTO.getACT_Code());
+        deigmaOrnithopanidaXPresAndThreats.setRelevenr(deigmaOrnithopanidaXPresAndThreatsDTO.getReleve_NR());
+        deigmaOrnithopanidaXPresAndThreats.setActcode(deigmaOrnithopanidaXPresAndThreatsDTO.getACT_Code());
         deigmaOrnithopanidaXPresAndThreats.setType(deigmaOrnithopanidaXPresAndThreatsDTO.getType());
         deigmaOrnithopanidaXPresAndThreats.setImportance(deigmaOrnithopanidaXPresAndThreatsDTO.getImportance());
         deigmaOrnithopanidaXPresAndThreats.setKodikos(deigmaOrnithopanidaXPresAndThreatsDTO.getKodikos());
@@ -34,8 +34,8 @@ public class DeigmaOrnithopanidaXPresAndThreatsMapperImpl implements DeigmaOrnit
 
         deigmaOrnithopanidaXPresAndThreatsDTO.setDeigmaornithopanidaID(deigmaOrnithopanidaXPresAndThreats.getDeigmaOrnithopanida().getId());
         deigmaOrnithopanidaXPresAndThreatsDTO.setKodikos( deigmaOrnithopanidaXPresAndThreats.getKodikos() );
-        deigmaOrnithopanidaXPresAndThreatsDTO.setReleve_NR( deigmaOrnithopanidaXPresAndThreats.getReleve_NR() );
-        deigmaOrnithopanidaXPresAndThreatsDTO.setACT_Code( deigmaOrnithopanidaXPresAndThreats.getCtornithopanidaPressuresAndThreats().getACT_Code());
+        deigmaOrnithopanidaXPresAndThreatsDTO.setReleve_NR( deigmaOrnithopanidaXPresAndThreats.getRelevenr() );
+        deigmaOrnithopanidaXPresAndThreatsDTO.setACT_Code( deigmaOrnithopanidaXPresAndThreats.getCtornithopanidaPressuresAndThreats().getActcode());
         deigmaOrnithopanidaXPresAndThreatsDTO.setType( deigmaOrnithopanidaXPresAndThreats.getType() );
         deigmaOrnithopanidaXPresAndThreatsDTO.setImportance( deigmaOrnithopanidaXPresAndThreats.getImportance() );
 

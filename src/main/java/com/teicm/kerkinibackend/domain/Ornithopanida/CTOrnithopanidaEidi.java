@@ -12,7 +12,7 @@ public class CTOrnithopanidaEidi
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @Column(name = "kodikoseidos", length = 50)
+    @Column(name = "kodikosEidos", length = 50)
     private String kodikoseidos;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "ctornithopanidaEidi")
@@ -29,18 +29,23 @@ public class CTOrnithopanidaEidi
     public Long getId() {
         return id;
     }
+
     public void setId(Long id) {
         this.id = id;
     }
+
     public String getKodikoseidos() {
         return kodikoseidos;
     }
+
     public void setKodikoseidos(String kodikoseidos) {
         this.kodikoseidos = kodikoseidos;
     }
+
     public Set<DeigmaOrnithopanidaXSpecies> getDeigmaOrnithopanidaXSpeciesSet() {
         return deigmaOrnithopanidaXSpeciesSet;
     }
+
     public void setDeigmaOrnithopanidaXSpeciesSet(Set<DeigmaOrnithopanidaXSpecies> deigmaOrnithopanidaXSpeciesSet) {
         this.deigmaOrnithopanidaXSpeciesSet = deigmaOrnithopanidaXSpeciesSet;
     }

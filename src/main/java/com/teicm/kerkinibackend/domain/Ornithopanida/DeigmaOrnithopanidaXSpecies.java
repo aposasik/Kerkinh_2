@@ -12,48 +12,48 @@ public class DeigmaOrnithopanidaXSpecies
     private Long id;
 
 
-    @Column(name="Kodikos")
+    @Column(name="kodikos")
     private Long kodikos;
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="AADeigmatos",nullable=false)
-    private Long AADeigmatos;
+    @Column(name="aaDeigmatos",nullable=false)
+    private Long aadeigmatos;
 
-    @Column(name = "Ora")
-    private Time Ora;
+    @Column(name = "ora")
+    private Time ora;
 
-    @Column(name = "XEGSA")
-    private Double XEGSA;
+    @Column(name = "xegsa")
+    private Double xegsa;
 
-    @Column(name = "YEGSA")
-    private Double YEGSA;
+    @Column(name = "yegsa")
+    private Double yegsa;
 
-    @Column(name = "Fulo")
-    private String Fulo;
+    @Column(name = "fulo")
+    private String fulo;
 
-    @Column(name = "Hlikia")
-    private String Hlikia;
+    @Column(name = "hlikia")
+    private String hlikia;
 
-    @Column(name = "ArithmosAtomon")
-    private String ArithmosAtomon;
+    @Column(name = "arithmosAtomon")
+    private String arithmosatomon;
 
-    @Column(name = "Paratiriseis")
-    private String Paratiriseis;
+    @Column(name = "paratiriseis")
+    private String paratiriseis;
 
-    @Column(name = "EK_Par_1")
-    private Boolean EK_Par_1;
+    @Column(name = "ekpar1")
+    private Boolean ekpar1;
 
-    @Column(name = "EK_Par_2")
-    private Boolean EK_Par_2;
+    @Column(name = "ekpar2")
+    private Boolean ekpar2;
 
-    @Column(name = "EK_Par_3")
-    private Boolean EK_Par_3;
+    @Column(name = "ekpar3")
+    private Boolean ekpar3;
 
-    @Column(name = "Attitude")
-    private String Attitude;
+    @Column(name = "attitude")
+    private String attitude;
 
-    @Column(name = "TyposParatiriseis")
-    private String TyposParatiriseis;
+    @Column(name = "typosParatiriseis")
+    private String typosparatiriseis;
 
     @ManyToOne
     private DeigmaOrnithopanida deigmaOrnithopanida;
@@ -64,125 +64,158 @@ public class DeigmaOrnithopanidaXSpecies
     public DeigmaOrnithopanidaXSpecies(){
 
     }
-    public DeigmaOrnithopanidaXSpecies(DeigmaOrnithopanida deigmaOrnithopanida,CTOrnithopanidaEidi ctornithopanidaEidi,Long kodikos, Long AADeigmatos, Time Ora,Double XEGSA,Double YEGSA,String Fulo, String Hlikia,String ArithmosAtomon, String Paratiriseis,Boolean EK_Par_1,Boolean EK_Par_2,Boolean EK_Par_3,String Attitude,String TyposParatiriseis)
+    public DeigmaOrnithopanidaXSpecies(DeigmaOrnithopanida deigmaOrnithopanida,CTOrnithopanidaEidi ctornithopanidaEidi,Long kodikos, Long aadeigmatos, Time ora,Double xegsa,Double yegsa,String fulo, String hlikia,String arithmosatomon, String paratiriseis,Boolean ekpar1,Boolean ekpar2,Boolean ekpar3,String attitude,String typosparatiriseis)
     {
         this.deigmaOrnithopanida=deigmaOrnithopanida;
         this.ctornithopanidaEidi=ctornithopanidaEidi;
         this.kodikos = kodikos;
-        this.AADeigmatos=AADeigmatos;
-        this.Ora=Ora;
-        this.XEGSA=XEGSA;
-        this.YEGSA=YEGSA;
-        this.Fulo=Fulo;
-        this.Hlikia=Hlikia;
-        this.ArithmosAtomon=ArithmosAtomon;
-        this.Paratiriseis=Paratiriseis;
-        this.EK_Par_1=EK_Par_1;
-        this.EK_Par_2=EK_Par_2;
-        this.EK_Par_3=EK_Par_3;
-        this.Attitude=Attitude;
-        this.TyposParatiriseis=TyposParatiriseis;
+        this.aadeigmatos=aadeigmatos;
+        this.ora=ora;
+        this.xegsa=xegsa;
+        this.yegsa=yegsa;
+        this.fulo=fulo;
+        this.hlikia=hlikia;
+        this.arithmosatomon=arithmosatomon;
+        this.paratiriseis=paratiriseis;
+        this.ekpar1=ekpar1;
+        this.ekpar2=ekpar2;
+        this.ekpar3=ekpar3;
+        this.attitude=attitude;
+        this.typosparatiriseis=typosparatiriseis;
     }
 
     public Long getId() {
         return id;
     }
+
     public void setId(Long id) {
         this.id = id;
     }
+
     public Long getKodikos() {
         return kodikos;
     }
+
     public void setKodikos(Long kodikos) {
         this.kodikos = kodikos;
     }
-    public Long getAADeigmatos() {
-        return AADeigmatos;
+
+    public Long getAadeigmatos() {
+        return aadeigmatos;
     }
-    public void setAADeigmatos(Long AADeigmatos) {
-        this.AADeigmatos = AADeigmatos;
+
+    public void setAadeigmatos(Long aadeigmatos) {
+        this.aadeigmatos = aadeigmatos;
     }
+
     public Time getOra() {
-        return Ora;
+        return ora;
     }
+
     public void setOra(Time ora) {
-        Ora = ora;
+        this.ora = ora;
     }
-    public Double getXEGSA() {
-        return XEGSA;
+
+    public Double getXegsa() {
+        return xegsa;
     }
-    public void setXEGSA(Double XEGSA) {
-        this.XEGSA = XEGSA;
+
+    public void setXegsa(Double xegsa) {
+        this.xegsa = xegsa;
     }
-    public Double getYEGSA() {
-        return YEGSA;
+
+    public Double getYegsa() {
+        return yegsa;
     }
-    public void setYEGSA(Double YEGSA) {
-        this.YEGSA = YEGSA;
+
+    public void setYegsa(Double yegsa) {
+        this.yegsa = yegsa;
     }
+
     public String getFulo() {
-        return Fulo;
+        return fulo;
     }
+
     public void setFulo(String fulo) {
-        Fulo = fulo;
+        this.fulo = fulo;
     }
+
     public String getHlikia() {
-        return Hlikia;
+        return hlikia;
     }
+
     public void setHlikia(String hlikia) {
-        Hlikia = hlikia;
+        this.hlikia = hlikia;
     }
-    public String getArithmosAtomon() {
-        return ArithmosAtomon;
+
+    public String getArithmosatomon() {
+        return arithmosatomon;
     }
-    public void setArithmosAtomon(String arithmosAtomon) {
-        ArithmosAtomon = arithmosAtomon;
+
+    public void setArithmosatomon(String arithmosatomon) {
+        this.arithmosatomon = arithmosatomon;
     }
+
     public String getParatiriseis() {
-        return Paratiriseis;
+        return paratiriseis;
     }
+
     public void setParatiriseis(String paratiriseis) {
-        Paratiriseis = paratiriseis;
+        this.paratiriseis = paratiriseis;
     }
-    public Boolean getEK_Par_1() {
-        return EK_Par_1;
+
+    public Boolean getEkpar1() {
+        return ekpar1;
     }
-    public void setEK_Par_1(Boolean EK_Par_1) {
-        this.EK_Par_1 = EK_Par_1;
+
+    public void setEkpar1(Boolean ekpar1) {
+        this.ekpar1 = ekpar1;
     }
-    public Boolean getEK_Par_2() {
-        return EK_Par_2;
+
+    public Boolean getEkpar2() {
+        return ekpar2;
     }
-    public void setEK_Par_2(Boolean EK_Par_2) {
-        this.EK_Par_2 = EK_Par_2;
+
+    public void setEkpar2(Boolean ekpar2) {
+        this.ekpar2 = ekpar2;
     }
-    public Boolean getEK_Par_3() {
-        return EK_Par_3;
+
+    public Boolean getEkpar3() {
+        return ekpar3;
     }
-    public void setEK_Par_3(Boolean EK_Par_3) {
-        this.EK_Par_3 = EK_Par_3;
+
+    public void setEkpar3(Boolean ekpar3) {
+        this.ekpar3 = ekpar3;
     }
+
     public String getAttitude() {
-        return Attitude;
+        return attitude;
     }
+
     public void setAttitude(String attitude) {
-        Attitude = attitude;
+        this.attitude = attitude;
     }
-    public String getTyposParatiriseis() {
-        return TyposParatiriseis;
+
+    public String getTyposparatiriseis() {
+        return typosparatiriseis;
     }
-    public void setTyposParatiriseis(String typosParatiriseis) {
-        TyposParatiriseis = typosParatiriseis;
+
+    public void setTyposparatiriseis(String typosparatiriseis) {
+        this.typosparatiriseis = typosparatiriseis;
     }
+
     public DeigmaOrnithopanida getDeigmaOrnithopanida() {
         return deigmaOrnithopanida;
     }
+
     public void setDeigmaOrnithopanida(DeigmaOrnithopanida deigmaOrnithopanida) {
         this.deigmaOrnithopanida = deigmaOrnithopanida;
     }
+
     public CTOrnithopanidaEidi getCtornithopanidaEidi() {
         return ctornithopanidaEidi;
     }
+
     public void setCtornithopanidaEidi(CTOrnithopanidaEidi ctornithopanidaEidi) {
         this.ctornithopanidaEidi = ctornithopanidaEidi;
     }

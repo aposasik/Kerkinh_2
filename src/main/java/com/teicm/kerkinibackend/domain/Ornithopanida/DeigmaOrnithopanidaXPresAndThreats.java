@@ -20,17 +20,17 @@ public class DeigmaOrnithopanidaXPresAndThreats
     @Column(name = "kodikos")
     private Long kodikos;
 
-    @Column(name = "Releve_NR", length = 50)
-    private String Releve_NR;
+    @Column(name = "releveNR", length = 50)
+    private String relevenr;
 
-    @Column(name = "ACT_Code", length = 50)
-    private String ACT_Code;
+    @Column(name = "actCode", length = 50)
+    private String actcode;
 
-    @Column(name = "Type", length = 50)
-    private String Type;
+    @Column(name = "type", length = 50)
+    private String type;
 
-    @Column(name = "Importance", length = 1)
-    private String Importance;
+    @Column(name = "importance", length = 1)
+    private String importance;
 
     @ManyToOne
     private DeigmaOrnithopanida deigmaOrnithopanida;
@@ -41,62 +41,77 @@ public class DeigmaOrnithopanidaXPresAndThreats
     public  DeigmaOrnithopanidaXPresAndThreats()
     {}
 
-    public  DeigmaOrnithopanidaXPresAndThreats(DeigmaOrnithopanida deigmaOrnithopanida,CTOrnithopanidaPressuresAndThreats ctornithopanidaPressuresAndThreats,Long kodikos,String Releve_NR,String ACT_Code,String Type,String Importance)
+    public  DeigmaOrnithopanidaXPresAndThreats(DeigmaOrnithopanida deigmaOrnithopanida,CTOrnithopanidaPressuresAndThreats ctornithopanidaPressuresAndThreats,Long kodikos,String relevenr,String actcode,String type,String importance)
     {
         this.deigmaOrnithopanida=deigmaOrnithopanida;
         this.ctornithopanidaPressuresAndThreats=ctornithopanidaPressuresAndThreats;
         this.kodikos=kodikos;
-        this.Releve_NR=Releve_NR;
-        this.ACT_Code=ACT_Code;
-        this.Type=Type;
-        this.Importance=Importance;
+        this.relevenr=relevenr;
+        this.actcode=actcode;
+        this.type=type;
+        this.importance=importance;
     }
 
     public Long getId() {
         return id;
     }
+
     public void setId(Long id) {
         this.id = id;
     }
+
     public Long getKodikos() {
         return kodikos;
     }
+
     public void setKodikos(Long kodikos) {
         this.kodikos = kodikos;
     }
-    public String getReleve_NR() {
-        return Releve_NR;
+
+    public String getRelevenr() {
+        return relevenr;
     }
-    public  void setReleve_NR(String releve_NR) {
-        Releve_NR = releve_NR;
+
+    public void setRelevenr(String relevenr) {
+        this.relevenr = relevenr;
     }
-    public String getACT_Code() {
-        return ACT_Code;
+
+    public String getActcode() {
+        return actcode;
     }
-    public void setACT_Code(String ACT_Code) {
-        this.ACT_Code = ACT_Code;
+
+    public void setActcode(String actcode) {
+        this.actcode = actcode;
     }
+
     public String getType() {
-        return Type;
+        return type;
     }
+
     public void setType(String type) {
-        Type = type;
+        this.type = type;
     }
+
     public String getImportance() {
-        return Importance;
+        return importance;
     }
+
     public void setImportance(String importance) {
-        Importance = importance;
+        this.importance = importance;
     }
+
     public DeigmaOrnithopanida getDeigmaOrnithopanida() {
         return deigmaOrnithopanida;
     }
+
     public void setDeigmaOrnithopanida(DeigmaOrnithopanida deigmaOrnithopanida) {
         this.deigmaOrnithopanida = deigmaOrnithopanida;
     }
+
     public CTOrnithopanidaPressuresAndThreats getCtornithopanidaPressuresAndThreats() {
         return ctornithopanidaPressuresAndThreats;
     }
+
     public void setCtornithopanidaPressuresAndThreats(CTOrnithopanidaPressuresAndThreats ctornithopanidaPressuresAndThreats) {
         this.ctornithopanidaPressuresAndThreats = ctornithopanidaPressuresAndThreats;
     }

@@ -1,5 +1,8 @@
 package com.teicm.kerkinibackend.domain.Ornithopanida;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.teicm.kerkinibackend.domain.Deigmata;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -7,7 +10,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-//TODO to name prosoxi
 @Table(name="deigma_ornithopanida")
 public class DeigmaOrnithopanida {
 
@@ -16,11 +18,16 @@ public class DeigmaOrnithopanida {
     @Column(name = "id", nullable = false)
     private Long id;
 
-    //TODO to name prosoxi
+    @OneToOne
+    @JsonIgnore
+    private Deigmata deigmata;
+
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "deigmaOrnithopanida")
+    @JsonIgnore
     private Set<DeigmaOrnithopanidaXPresAndThreats> deigmaOrnithopanidaXPresAndThreatsSet = new HashSet<>();
-    //TODO to name prosoxi
+
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "deigmaOrnithopanida")
+    @JsonIgnore
     private Set<DeigmaOrnithopanidaXSpecies> deigmaOrnithopanidaXSpeciesSet = new HashSet<>();
 
     @Column(name = "researcher")
@@ -131,7 +138,8 @@ public class DeigmaOrnithopanida {
 
     }
 
-    public DeigmaOrnithopanida(Set<DeigmaOrnithopanidaXPresAndThreats>deigmaOrnithopanidaXPresAndThreatsSet,Set<DeigmaOrnithopanidaXSpecies>deigmaOrnithopanidaXSpeciesSet,String researcher,String locality,LocalDate date,LocalTime time,String kodikosDeigmatolipsias,String xrimatodotikoMeso,String habitat,Double xegsa,Double yegsa,Double latitude,Double longitude,Double altitude,Double xegsat,Double yegsat,Double latitudet,Double longitudet,Double altitudet,String paratiriseis,String gridCell,String nomos,String methodos,String kodikosNatura,String kyriarxosTyposVlastisis,String kalypsi,String ypsosVlastisis,String poiotita,String puknotita,Byte file,Byte photo,String nefoseis,String kateuthinsiAnemou,String kateuthinsiAnemouAzim,String thermokrasia,String entasiAnemou){
+    public DeigmaOrnithopanida(Deigmata deigmata,Set<DeigmaOrnithopanidaXPresAndThreats>deigmaOrnithopanidaXPresAndThreatsSet,Set<DeigmaOrnithopanidaXSpecies>deigmaOrnithopanidaXSpeciesSet,String researcher,String locality,LocalDate date,LocalTime time,String kodikosDeigmatolipsias,String xrimatodotikoMeso,String habitat,Double xegsa,Double yegsa,Double latitude,Double longitude,Double altitude,Double xegsat,Double yegsat,Double latitudet,Double longitudet,Double altitudet,String paratiriseis,String gridCell,String nomos,String methodos,String kodikosNatura,String kyriarxosTyposVlastisis,String kalypsi,String ypsosVlastisis,String poiotita,String puknotita,Byte file,Byte photo,String nefoseis,String kateuthinsiAnemou,String kateuthinsiAnemouAzim,String thermokrasia,String entasiAnemou){
+          this.deigmata=deigmata;
           this.deigmaOrnithopanidaXPresAndThreatsSet=deigmaOrnithopanidaXPresAndThreatsSet;
           this.deigmaOrnithopanidaXSpeciesSet=deigmaOrnithopanidaXSpeciesSet;
           this.researcher=researcher;
@@ -178,6 +186,15 @@ public class DeigmaOrnithopanida {
     public void setId(Long id) {
         this.id = id;
     }
+
+    public Deigmata getDeigmata() {
+        return deigmata;
+    }
+
+    public void setDeigmata(Deigmata deigmata) {
+        this.deigmata = deigmata;
+    }
+
     public Set<DeigmaOrnithopanidaXPresAndThreats> getDeigmaOrnithopanidaXPresAndThreatsSet() {
         return deigmaOrnithopanidaXPresAndThreatsSet;
     }
