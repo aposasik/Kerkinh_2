@@ -8,9 +8,12 @@ public class CTOrnithopanidaEidiDTO
 {
     private String kodikoseidos;
 
-    public CTOrnithopanidaEidiDTO(String kodikoseidos)
-    {
-        this.kodikoseidos = kodikoseidos;
+
+    public String getKodikoseidos() {
+        return kodikoseidos;
     }
 
+    public void setKodikoseidos(String kodikoseidos) {
+        this.kodikoseidos = kodikoseidos;
+    }
 }

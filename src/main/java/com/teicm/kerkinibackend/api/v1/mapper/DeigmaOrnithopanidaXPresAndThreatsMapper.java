@@ -10,7 +10,7 @@ import org.mapstruct.factory.Mappers;
 
 public interface DeigmaOrnithopanidaXPresAndThreatsMapper
 {
-   // DeigmaOrnithopanidaXPresAndThreatsMapper INSTANCE = Mappers.getMapper(DeigmaOrnithopanidaXPresAndThreatsMapper.class);
+    // DeigmaOrnithopanidaXPresAndThreatsMapper INSTANCE = Mappers.getMapper(DeigmaOrnithopanidaXPresAndThreatsMapper.class);
 
     DeigmaOrnithopanidaXPresAndThreats deigmaOrnithopanidaXPresAndThreatsTOdeigmaOrnithopanidaXPresAndThreatsDTO(DeigmaOrnithopanidaXPresAndThreatsDTO deigmaOrnithopanidaXPresAndThreatsDTO);
 

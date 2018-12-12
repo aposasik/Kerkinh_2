@@ -29,23 +29,18 @@ public class CTOrnithopanidaEidi
     public Long getId() {
         return id;
     }
-
     public void setId(Long id) {
         this.id = id;
     }
-
     public String getKodikoseidos() {
         return kodikoseidos;
     }
-
     public void setKodikoseidos(String kodikoseidos) {
         this.kodikoseidos = kodikoseidos;
     }
-
     public Set<DeigmaOrnithopanidaXSpecies> getDeigmaOrnithopanidaXSpeciesSet() {
         return deigmaOrnithopanidaXSpeciesSet;
     }
-
     public void setDeigmaOrnithopanidaXSpeciesSet(Set<DeigmaOrnithopanidaXSpecies> deigmaOrnithopanidaXSpeciesSet) {
         this.deigmaOrnithopanidaXSpeciesSet = deigmaOrnithopanidaXSpeciesSet;
     }

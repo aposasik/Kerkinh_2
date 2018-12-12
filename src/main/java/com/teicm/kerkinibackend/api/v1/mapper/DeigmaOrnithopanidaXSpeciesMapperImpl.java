@@ -39,6 +39,7 @@ public class DeigmaOrnithopanidaXSpeciesMapperImpl implements DeigmaOrnithopanid
         }
         DeigmaOrnithopanidaXSpeciesDTO deigmaOrnithopanidaXSpeciesDTO = new DeigmaOrnithopanidaXSpeciesDTO();
 
+        deigmaOrnithopanidaXSpeciesDTO.setDeigmataOrnithopanidasid(deigmaOrnithopanidaXSpecies.getDeigmaOrnithopanida().getId());
         deigmaOrnithopanidaXSpeciesDTO.setAadeigmatos(deigmaOrnithopanidaXSpecies.getAadeigmatos());
         deigmaOrnithopanidaXSpeciesDTO.setOra(deigmaOrnithopanidaXSpecies.getOra());
         deigmaOrnithopanidaXSpeciesDTO.setXegsa(deigmaOrnithopanidaXSpecies.getXegsa());

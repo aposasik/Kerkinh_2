@@ -36,6 +36,6 @@ public class CTOrnithopanidaPressuresAndThreatsMapperImpl implements CTOrnithopa
         return ctOrnithopanidaPressuresAndThreatsDTO;
 
     }
-    }
+}
 
 
