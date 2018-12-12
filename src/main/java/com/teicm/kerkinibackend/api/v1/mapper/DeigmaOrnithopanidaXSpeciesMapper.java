@@ -1,0 +1,9 @@
+package com.teicm.kerkinibackend.api.v1.mapper;
+
+import com.teicm.kerkinibackend.api.v1.model.DeigmaOrnithopanidaXSpeciesDTO;
+import com.teicm.kerkinibackend.domain.Ornithopanida.DeigmaOrnithopanidaXSpecies;
+
+public interface DeigmaOrnithopanidaXSpeciesMapper {
+    DeigmaOrnithopanidaXSpecies deigmaOrnithopanidaXSpeciesTOdeigmaOrnithopanidaXSpeciesDTO(DeigmaOrnithopanidaXSpeciesDTO deigmaOrnithopanidaXSpeciesDTO);
+    DeigmaOrnithopanidaXSpeciesDTO deigmaOrnithopanidaXSpeciesDTOTOdeigmaOrnithopanidaXSpecies(DeigmaOrnithopanidaXSpecies deigmaOrnithopanidaXSpecies);
+}
