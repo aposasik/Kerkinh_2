@@ -3,8 +3,11 @@ package com.teicm.kerkinibackend.service;
 
 import com.teicm.kerkinibackend.Repository.CTOrnithopanidaPressuresAndThreatsRep;
 import com.teicm.kerkinibackend.api.v1.mapper.CTOrnithopanidaPressuresAndThreatsMapper;
+import com.teicm.kerkinibackend.domain.Ornithopanida.CTOrnithopanidaPressuresAndThreats;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import java.util.List;
 
 @Component
 public class CTOrnithopanidaPressuresAndThreatsServiceImpl implements CTOrnithopanidaPressuresAndThreatsService
@@ -18,5 +21,11 @@ public class CTOrnithopanidaPressuresAndThreatsServiceImpl implements CTOrnithop
     {
         this.ctOrnithopanidaPressuresAndThreatsMapper = ctOrnithopanidaPressuresAndThreatsMapper;
         this.ctOrnithopanidaPressuresAndThreatsRep = ctOrnithopanidaPressuresAndThreatsRep;
+    }
+
+    @Override
+    public List<CTOrnithopanidaPressuresAndThreats> findAll()
+    {
+        return ctOrnithopanidaPressuresAndThreatsRep.findAll();
     }
 }

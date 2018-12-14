@@ -13,20 +13,12 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/deigmaOrnithopanidaXPresAndThreats")
-public class DeigmaOrnithopanidaXPresAndThreatsController
-{
+public class DeigmaOrnithopanidaXPresAndThreatsController {
     @Autowired
-    private  DeigmaOrnithopanidaXPresAndThreatsService deigmaOrnithopanidaXPresAndThreatsService;
+    private DeigmaOrnithopanidaXPresAndThreatsService deigmaOrnithopanidaXPresAndThreatsService;
 
-    public DeigmaOrnithopanidaXPresAndThreatsController(DeigmaOrnithopanidaXPresAndThreatsService deigmaOrnithopanidaXPresAndThreatsService)
-    {
+    public DeigmaOrnithopanidaXPresAndThreatsController(DeigmaOrnithopanidaXPresAndThreatsService deigmaOrnithopanidaXPresAndThreatsService) {
         this.deigmaOrnithopanidaXPresAndThreatsService = deigmaOrnithopanidaXPresAndThreatsService;
     }
-
-    @GetMapping
-    @ResponseStatus(HttpStatus.OK)
-    public List<DeigmaOrnithopanidaXPresAndThreats> findAll()
-    {
-         return deigmaOrnithopanidaXPresAndThreatsService.findAll();
-    }
 }
+
