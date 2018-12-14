@@ -9,4 +9,8 @@ import java.util.List;
 public interface CTOrnithopanidaPressuresAndThreatsService
 {
     List<CTOrnithopanidaPressuresAndThreats> findAll();
+
+    CTOrnithopanidaPressuresAndThreats findById(Long id);
+
+    boolean deletePressThreats(Long id);
 }

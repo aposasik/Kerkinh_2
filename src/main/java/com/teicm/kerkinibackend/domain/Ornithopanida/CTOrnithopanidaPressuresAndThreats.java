@@ -2,6 +2,7 @@ package com.teicm.kerkinibackend.domain.Ornithopanida;
 
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
@@ -22,7 +23,7 @@ public class CTOrnithopanidaPressuresAndThreats
     private String remarks;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "ctornithopanidaPressuresAndThreats")
-    private Set<DeigmaOrnithopanidaXPresAndThreats> deigmaOrnithopanidaXPresAndThreatsSet;
+    private Set<DeigmaOrnithopanidaXPresAndThreats> deigmaOrnithopanidaXPresAndThreatsSet = new HashSet<>();
 
     public CTOrnithopanidaPressuresAndThreats() { }
 

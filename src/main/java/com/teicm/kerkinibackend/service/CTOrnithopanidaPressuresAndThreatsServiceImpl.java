@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.Optional;
 
 @Component
 public class CTOrnithopanidaPressuresAndThreatsServiceImpl implements CTOrnithopanidaPressuresAndThreatsService
@@ -27,5 +28,24 @@ public class CTOrnithopanidaPressuresAndThreatsServiceImpl implements CTOrnithop
     public List<CTOrnithopanidaPressuresAndThreats> findAll()
     {
         return ctOrnithopanidaPressuresAndThreatsRep.findAll();
+    }
+
+    @Override
+    public CTOrnithopanidaPressuresAndThreats findById(Long id)
+    {
+        Optional<CTOrnithopanidaPressuresAndThreats> optional = ctOrnithopanidaPressuresAndThreatsRep.findById(id);
+        return optional.orElse(null);
+    }
+
+    @Override
+    public boolean deletePressThreats(Long id)
+    {
+        Optional<CTOrnithopanidaPressuresAndThreats> OptDelete = ctOrnithopanidaPressuresAndThreatsRep.findById(id);
+
+        if (OptDelete.isPresent())
+        {
+            ctOrnithopanidaPressuresAndThreatsRep.delete(OptDelete.get());
+            return true;
+        }   return false;
     }
 }
