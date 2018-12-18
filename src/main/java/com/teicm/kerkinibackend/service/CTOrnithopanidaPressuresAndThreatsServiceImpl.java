@@ -7,6 +7,7 @@ import com.teicm.kerkinibackend.domain.Ornithopanida.CTOrnithopanidaPressuresAnd
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -47,5 +48,11 @@ public class CTOrnithopanidaPressuresAndThreatsServiceImpl implements CTOrnithop
             ctOrnithopanidaPressuresAndThreatsRep.delete(OptDelete.get());
             return true;
         }   return false;
+    }
+
+    @Override
+    public ArrayList<String> getAllActCodes()
+    {
+        return ctOrnithopanidaPressuresAndThreatsRep.findActOrderByAct();
     }
 }

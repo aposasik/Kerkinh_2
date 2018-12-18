@@ -5,6 +5,8 @@ import com.teicm.kerkinibackend.service.CTOrnithopanidaPressuresAndThreatsServic
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -40,5 +42,11 @@ import java.util.List;
           return ctOrnithopanidaPressuresAndThreatsService.deletePressThreats(id);
       }
 
+      @GetMapping({"/getAllActCodes"})
+      @ResponseStatus(HttpStatus.OK)
+      public ArrayList<String> getAllActCodes()
+      {
+        return ctOrnithopanidaPressuresAndThreatsService.getAllActCodes();
+      }
   }
 
