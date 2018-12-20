@@ -13,8 +13,8 @@ public class CTOrnithopanidaPressuresAndThreatsMapperImpl implements CTOrnithopa
         }
 
         CTOrnithopanidaPressuresAndThreats ctOrnithopanidaPressuresAndThreats = new CTOrnithopanidaPressuresAndThreats();
-        ctOrnithopanidaPressuresAndThreats.setActcode(ctOrnithopanidaPressuresAndThreatsDTO.getACT_Code());
-        ctOrnithopanidaPressuresAndThreats.setDescripten(ctOrnithopanidaPressuresAndThreatsDTO.getDescriptEN());
+        ctOrnithopanidaPressuresAndThreats.setActcode(ctOrnithopanidaPressuresAndThreatsDTO.getActcode());
+        ctOrnithopanidaPressuresAndThreats.setDescripten(ctOrnithopanidaPressuresAndThreatsDTO.getDescripten());
         ctOrnithopanidaPressuresAndThreats.setRemarks(ctOrnithopanidaPressuresAndThreatsDTO.getRemarks());
 
         return ctOrnithopanidaPressuresAndThreats;
@@ -29,8 +29,8 @@ public class CTOrnithopanidaPressuresAndThreatsMapperImpl implements CTOrnithopa
             return null;
         }
         CTOrnithopanidaPressuresAndThreatsDTO ctOrnithopanidaPressuresAndThreatsDTO = new CTOrnithopanidaPressuresAndThreatsDTO();
-        ctOrnithopanidaPressuresAndThreatsDTO.setACT_Code(ctOrnithopanidaPressuresAndThreats.getActcode());
-        ctOrnithopanidaPressuresAndThreatsDTO.setDescriptEN(ctOrnithopanidaPressuresAndThreats.getDescripten());
+        ctOrnithopanidaPressuresAndThreatsDTO.setActcode(ctOrnithopanidaPressuresAndThreats.getActcode());
+        ctOrnithopanidaPressuresAndThreatsDTO.setDescripten(ctOrnithopanidaPressuresAndThreats.getDescripten());
         ctOrnithopanidaPressuresAndThreatsDTO.setRemarks(ctOrnithopanidaPressuresAndThreats.getRemarks());
 
         return ctOrnithopanidaPressuresAndThreatsDTO;

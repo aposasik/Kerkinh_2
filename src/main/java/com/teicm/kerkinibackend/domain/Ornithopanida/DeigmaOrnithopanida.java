@@ -134,6 +134,13 @@ public class DeigmaOrnithopanida {
     @Column(name="entasiAnemou")
     private String entasiAnemou;
 
+    public DeigmaOrnithopanida addPressThreat(DeigmaOrnithopanidaXPresAndThreats deigmaOrnithopanidaXPresAndThreats)
+    {
+        deigmaOrnithopanidaXPresAndThreats.setDeigmaOrnithopanida(this);
+        this.deigmaOrnithopanidaXPresAndThreatsSet.add(deigmaOrnithopanidaXPresAndThreats);
+        return this;
+    }
+
     public DeigmaOrnithopanida(){
 
     }

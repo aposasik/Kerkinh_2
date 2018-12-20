@@ -50,10 +50,11 @@ import java.util.List;
         return ctOrnithopanidaPressuresAndThreatsService.getAllActCodes();
       }
 
-
+      @CrossOrigin
       @PostMapping
       @ResponseStatus(HttpStatus.CREATED)
-      public CTOrnithopanidaPressuresAndThreats addPressThreat(@RequestBody CTOrnithopanidaPressuresAndThreatsDTO ctOrnithopanidaPressuresAndThreatsDTO){
+      public CTOrnithopanidaPressuresAndThreats addPressThreat(@RequestBody CTOrnithopanidaPressuresAndThreatsDTO ctOrnithopanidaPressuresAndThreatsDTO)
+      {
          return ctOrnithopanidaPressuresAndThreatsService.addPressThreat(ctOrnithopanidaPressuresAndThreatsDTO);
       }
   }

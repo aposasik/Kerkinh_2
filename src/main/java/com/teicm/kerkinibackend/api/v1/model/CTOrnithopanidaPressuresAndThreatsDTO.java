@@ -2,22 +2,27 @@ package com.teicm.kerkinibackend.api.v1.model;
 
 public class CTOrnithopanidaPressuresAndThreatsDTO
 {
-    private String ACT_Code;
-    private String DescriptEN;
+    private String Actcode;
+    private String Descripten;
     private String Remarks;
 
-    public String getACT_Code() {
-        return ACT_Code;
+
+    public String getActcode() {
+        return Actcode;
     }
-    public void setACT_Code(String ACT_Code) {
-        this.ACT_Code = ACT_Code;
+
+    public void setActcode(String actcode) {
+        Actcode = actcode;
     }
-    public String getDescriptEN() {
-        return DescriptEN;
+
+    public String getDescripten() {
+        return Descripten;
     }
-    public void setDescriptEN(String descriptEN) {
-        DescriptEN = descriptEN;
+
+    public void setDescripten(String descripten) {
+        Descripten = descripten;
     }
+
     public String getRemarks() {
         return Remarks;
     }
