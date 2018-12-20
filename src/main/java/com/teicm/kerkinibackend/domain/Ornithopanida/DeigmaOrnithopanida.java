@@ -178,8 +178,6 @@ public class DeigmaOrnithopanida {
           this.entasiAnemou=entasiAnemou;
     }
 
-    //TODO prepei na ginoun ta implements gia na mporesw na kanw tis methodous !!!
-
     public Long getId() {
         return id;
     }

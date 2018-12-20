@@ -25,6 +25,12 @@ public class CTOrnithopanidaPressuresAndThreats
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "ctornithopanidaPressuresAndThreats")
     private Set<DeigmaOrnithopanidaXPresAndThreats> deigmaOrnithopanidaXPresAndThreatsSet = new HashSet<>();
 
+    public CTOrnithopanidaPressuresAndThreats addXPressThreat(DeigmaOrnithopanidaXPresAndThreats deigmaOrnithopanidaXPresAndThreats){
+        deigmaOrnithopanidaXPresAndThreats.setCtornithopanidaPressuresAndThreats(this);
+        this.deigmaOrnithopanidaXPresAndThreatsSet.add(deigmaOrnithopanidaXPresAndThreats);
+        return this;
+    }
+
     public CTOrnithopanidaPressuresAndThreats() { }
 
     public CTOrnithopanidaPressuresAndThreats(String actcode,String descripten,String remarks, Set<DeigmaOrnithopanidaXPresAndThreats> deigmaOrnithopanidaXPresAndThreatsSet)

@@ -3,6 +3,7 @@ package com.teicm.kerkinibackend.service;
 
 import com.teicm.kerkinibackend.Repository.CTOrnithopanidaPressuresAndThreatsRep;
 import com.teicm.kerkinibackend.api.v1.mapper.CTOrnithopanidaPressuresAndThreatsMapper;
+import com.teicm.kerkinibackend.api.v1.model.CTOrnithopanidaPressuresAndThreatsDTO;
 import com.teicm.kerkinibackend.domain.Ornithopanida.CTOrnithopanidaPressuresAndThreats;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -54,5 +55,10 @@ public class CTOrnithopanidaPressuresAndThreatsServiceImpl implements CTOrnithop
     public ArrayList<String> getAllActCodes()
     {
         return ctOrnithopanidaPressuresAndThreatsRep.findActOrderByAct();
+    }
+
+    @Override
+    public CTOrnithopanidaPressuresAndThreats addPressThreat(CTOrnithopanidaPressuresAndThreatsDTO ctOrnithopanidaPressuresAndThreatsDTO){
+      return ctOrnithopanidaPressuresAndThreatsRep.save(ctOrnithopanidaPressuresAndThreatsMapper.ctOrnithopanidaPressuresAndThreatsTOctOrnithopanidaPressuresAndThreatsDTO(ctOrnithopanidaPressuresAndThreatsDTO));
     }
 }

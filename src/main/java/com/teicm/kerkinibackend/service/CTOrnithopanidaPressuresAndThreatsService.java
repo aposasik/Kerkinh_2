@@ -1,5 +1,6 @@
 package com.teicm.kerkinibackend.service;
 
+import com.teicm.kerkinibackend.api.v1.model.CTOrnithopanidaPressuresAndThreatsDTO;
 import com.teicm.kerkinibackend.domain.Ornithopanida.CTOrnithopanidaPressuresAndThreats;
 import org.springframework.stereotype.Service;
 
@@ -16,4 +17,6 @@ public interface CTOrnithopanidaPressuresAndThreatsService
     boolean deletePressThreats(Long id);
 
     ArrayList<String> getAllActCodes();
+
+    CTOrnithopanidaPressuresAndThreats addPressThreat(CTOrnithopanidaPressuresAndThreatsDTO ctOrnithopanidaPressuresAndThreatsDTO);
 }

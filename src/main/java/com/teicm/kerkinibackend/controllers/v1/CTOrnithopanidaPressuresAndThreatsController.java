@@ -1,5 +1,6 @@
 package com.teicm.kerkinibackend.controllers.v1;
 
+import com.teicm.kerkinibackend.api.v1.model.CTOrnithopanidaPressuresAndThreatsDTO;
 import com.teicm.kerkinibackend.domain.Ornithopanida.CTOrnithopanidaPressuresAndThreats;
 import com.teicm.kerkinibackend.service.CTOrnithopanidaPressuresAndThreatsService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,6 +48,13 @@ import java.util.List;
       public ArrayList<String> getAllActCodes()
       {
         return ctOrnithopanidaPressuresAndThreatsService.getAllActCodes();
+      }
+
+
+      @PostMapping
+      @ResponseStatus(HttpStatus.CREATED)
+      public CTOrnithopanidaPressuresAndThreats addPressThreat(@RequestBody CTOrnithopanidaPressuresAndThreatsDTO ctOrnithopanidaPressuresAndThreatsDTO){
+         return ctOrnithopanidaPressuresAndThreatsService.addPressThreat(ctOrnithopanidaPressuresAndThreatsDTO);
       }
   }
 
