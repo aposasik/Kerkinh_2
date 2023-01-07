@@ -1,0 +1,30 @@
+{
+  "name": "kerkinifrontendweb",
+  "version": "1.0.0",
+  "description": "Front end Web Application for kerkini App. Made with Vue, Nuxt along with some libraries and frameworks.",
+  "author": "alexgil1994",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.0.0",
+    "babel-loader": "^8.0.6",
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.11.0",
+    "vue": "^2.6.11",
+    "vue-browser-geolocation": "^1.8.0",
+    "vue-geolocation-api": "^0.1.17",
+    "vue-meta": "^2.3.3",
+    "vue2-google-maps": "^0.10.7",
+    "vuetify": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2"
+  }
+}

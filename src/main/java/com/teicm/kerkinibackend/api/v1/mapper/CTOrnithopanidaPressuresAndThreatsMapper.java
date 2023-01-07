@@ -1,9 +1,0 @@
-package com.teicm.kerkinibackend.api.v1.mapper;
-
-import com.teicm.kerkinibackend.api.v1.model.CTOrnithopanidaPressuresAndThreatsDTO;
-import com.teicm.kerkinibackend.domain.Ornithopanida.CTOrnithopanidaPressuresAndThreats;
-
-public interface CTOrnithopanidaPressuresAndThreatsMapper {
-    CTOrnithopanidaPressuresAndThreats ctOrnithopanidaPressuresAndThreatsTOctOrnithopanidaPressuresAndThreatsDTO(CTOrnithopanidaPressuresAndThreatsDTO ctOrnithopanidaPressuresAndThreatsDTO);
-    CTOrnithopanidaPressuresAndThreatsDTO ctOrnithopanidaPressuresAndThreatsDTOTOctOrnithopanidaPressuresAndThreats(CTOrnithopanidaPressuresAndThreats ctOrnithopanidaPressuresAndThreats);
-}
