@@ -14,7 +14,7 @@
     "@nuxtjs/axios": "^5.0.0",
     "babel-loader": "^8.0.6",
     "cross-env": "^5.2.0",
-    "nuxt": "^2.11.0",
+    "nuxt": "^2.16.3",
     "vue": "^2.6.11",
     "vue-browser-geolocation": "^1.8.0",
     "vue-geolocation-api": "^0.1.17",
