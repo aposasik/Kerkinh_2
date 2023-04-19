@@ -12,6 +12,10 @@ let store = {};
 
   // If store is an exported method = classic mode (deprecated)
 
+  if (typeof store === 'function') {
+    return console.warn('Classic mode for store/ is deprecated and will be removed in Nuxt 3.')
+  }
+
   // Enforce store modules
   store.modules = store.modules || {}
 
@@ -28,6 +32,29 @@ let store = {};
   resolveStoreModules(require('..\\store\\thhlastika\\deigma-thhlastikwn.js'), 'thhlastika/deigma-thhlastikwn.js')
 
   // If the environment supports hot reloading...
+
+  if (process.client && module.hot) {
+    // Whenever any Vuex module is updated...
+    module.hot.accept([
+      '..\\store\\deigmata.js',
+      '..\\store\\index.js',
+      '..\\store\\ornithopanida\\ct-eidh.js',
+      '..\\store\\ornithopanida\\ct-press-threats.js',
+      '..\\store\\ornithopanida\\deigma-ornithopanida-x-eidh.js',
+      '..\\store\\ornithopanida\\deigma-ornithopanida-x-press-threats.js',
+      '..\\store\\ornithopanida\\deigma-ornithopanida.js',
+      '..\\store\\thhlastika\\ct-eidh.js',
+      '..\\store\\thhlastika\\ct-press-threats.js',
+      '..\\store\\thhlastika\\deigma-thhlastikwn-x-eidh.js',
+      '..\\store\\thhlastika\\deigma-thhlastikwn-x-press-threats.js',
+      '..\\store\\thhlastika\\deigma-thhlastikwn.js',
+    ], () => {
+      // Update `root.modules` with the latest definitions.
+      updateModules()
+      // Trigger a hot update in the store.
+      window.$nuxt.$store.hotUpdate(store)
+    })
+  }
 })()
 
 // createStore
